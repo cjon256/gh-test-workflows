@@ -1,0 +1,13 @@
+
+name: test-workflow01
+
+on: workflow_dispatch
+
+jobs:
+  job01:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: step01
+        run: echo "hello github!"
+      - name: step02
+        run: echo "second step, same as the first"
